@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import CarsProvider from './context/CarsProvider';
-import TrafficProvider from './context/TrafficProvider';
+import Provider from './context/Provider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CarsProvider>
-      <TrafficProvider>
-        <App />
-      </TrafficProvider>
-    </CarsProvider>
+    <Provider>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
